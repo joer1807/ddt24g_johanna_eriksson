@@ -24,6 +24,22 @@
         .puff-content {
             margin-top: 15px;
         }
+
+        .hero-button{
+            display: inline-block;
+            background-color:cadetblue;
+            color:rgb(25, 4, 4);
+            text-decoration:non;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius:5px;
+            margin-top: 10px;
+            transition: background-color 0.2s ease;
+        }
+        .hero-button:hover {
+            background-color: #219653;
+        }
   /* här ska det nu anpassas för dator/surfplatta */
 
   @media (min-width:768px) 
