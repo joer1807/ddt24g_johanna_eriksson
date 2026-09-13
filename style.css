@@ -1,8 +1,9 @@
 .puff-section {
+    background-color: rgb(236, 236, 226);
     display:flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 60px 0;
+    gap: 40px;
+    padding: 60px 20px;
 }
 
 .puff-card{
@@ -13,7 +14,8 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;}
+    background-color: #91c8f2;
+}
 
     .puff-image img {
         width: 100px;
