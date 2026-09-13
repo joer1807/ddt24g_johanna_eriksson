@@ -37,6 +37,49 @@
     .puff-card {
         width: 30%;
     }
+
+    .cta-section {
+        background-color: #dbefd2;
+        padding: 40px 20px;
+        margin-top: 40px;
+    }
+
+    .cta-container{
+       max-width:  1200px;
+       margin:0 auto;
+       text-align: center;     /*så texten centreras på mobilskärm*/
+
+    }
+    .cta-text{
+     color:aquamarine
+     line-height: 1.6;
+     margin-bottom:25px;
+    }
+
+    .cta-button {
+display: inline-block; 
+background-color: rgb(156, 208, 23);
+color: white
+text-decoration:blue; 
+padding: 15px 35px;
+font-size 1.1rem; 
+font-weight:bold; 
+border-radius: 30px     /*rundade hörn på knappen*/
+bow-shadow::after; 
+transition: all 0.2s ease; 
+ }
+
+.cta-button: hover{
+  background: color #219653;
+  transform:translateY(-2px);
+
+}
+
+@media (min-width: 768px) {
+    .cta-section}
+    padding: 60px 40px;
+}
+   
   
   
 
