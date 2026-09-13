@@ -76,8 +76,20 @@ transition: all 0.2s ease;
 }
 
 @media (min-width: 768px) {
-    .cta-section}
+    .cta-section { 
     padding: 60px 40px;
+}
+
+.cta-container {
+display:flex; 
+justify-content: space-between;
+align-items: center;
+text-align: left;
+}
+
+.cta-text{
+flex:1;
+margin-right:auto;
 }
    
   
