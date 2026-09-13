@@ -1,0 +1,44 @@
+.puff-section {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.puff-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;}
+
+    .puff-image img {
+        width: 100px;
+        height: 100px; } 
+
+        .puff-content {
+            margin-top: 15px;
+        }
+  /* här ska det nu anpassas för dator/surfplatta */
+
+  @media (min-width:768px) 
+    .puff-section {
+        display: grid;    /*på mobilen staplas på dator 3kolumner*/
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        max-width: 1200px;
+        margin: 0 auto;    /*centrerar innehållet när skärmen ändrar storlek*/
+        padding : 40px 20px;
+    }
+
+    .puff-card {
+        width: 30%;
+    }
+  
+  
+
+
+
