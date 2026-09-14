@@ -1,7 +1,9 @@
 
-body{
+body{     /*grundinställningar samt inställingar små skärmar*/
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; /*grundinställningar samt inställingar små skärmar*/
+    padding:10px;
 background-color: bisque;
 background-image: url(images/hero.jpg);  /*lagt in styling till bilden*/
 background-image: linear-gradient(rgba 0,0,0,0.3);
@@ -27,14 +29,14 @@ font-size: 1.3rem;
 
 .puff-section {
     background-color: rgb(236, 236, 226);
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 40px;
     padding: 60px 20px;
 }
 
 .puff-card {
-    display: flex;
+    display: flex;  /* sätter behållarna i vertikal riktn*/
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -114,7 +116,7 @@ font-size: 1.3rem;
 
 
 /* 
-   DATOR/SURFPLATTA  gemensam låda
+   DATOR/SURFPLATTA/större   gemensam låda
     */
 @media (min-width: 768px) {  /* 🟡 HÄR ÖPPNAS HELA DATOR-LÅDAN , denna var inte stängd innan, jag rättade den. ha alla i samma låda*/
 
