@@ -55,7 +55,6 @@ font-size: 1.3rem;
 .puff-section {
     background-color: rgb(236, 236, 226);
     display: grid;
-    
     gap: 40px;
     padding: 60px 20px;
 }
