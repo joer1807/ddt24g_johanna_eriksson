@@ -2,7 +2,10 @@
 body{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+background-color: bisque;
+background-image: url(images/hero.jpg);  /*lagt in styling till bilden*/
+background-image: linear-gradient(rgba 0,0,0,0.3);
+background-attachment: fixed;
 }
 
 header {
@@ -12,10 +15,15 @@ padding:20px;
 
 }
 #logotyp {
-    margin-left: auto;
+    margin-left: 20px;
 
 }
+.hero-section {
+color: rgb(229, 230, 222);
+font-weight: bold;
+font-size: 1.3rem;
 
+}
 
 .puff-section {
     background-color: rgb(236, 236, 226);
@@ -79,7 +87,7 @@ padding:20px;
 }
 
 .cta-text {
-    color: rgb(13, 1, 1);      
+    color: rgb(1, 10, 24);      
     line-height: 1.6;
     margin-bottom: 25px;
     font-size: 1.1rem;
