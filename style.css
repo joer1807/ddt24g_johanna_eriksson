@@ -1,3 +1,16 @@
+
+header {
+display: flex;
+align-items: center;
+padding:20px;
+
+}
+#logotyp {
+    margin-left: auto;
+
+}
+
+
 .puff-section {
     background-color: rgb(236, 236, 226);
     display: flex;
@@ -37,6 +50,7 @@
     font-weight: bold;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom:50px;
     transition: background-color 0.2s ease;
 }
 
@@ -88,7 +102,7 @@
 /* 
    DATOR/SURFPLATTA  gemensam låda
     */
-@media (min-width: 768px) {  /* 🟡 HÄR ÖPPNAS HELA DATOR-LÅDAN */
+@media (min-width: 768px) {  /* 🟡 HÄR ÖPPNAS HELA DATOR-LÅDAN , denna var inte stängd innan, jag rättade den. ha alla i samma låda*/
 
     .puff-section {
         display: grid;
