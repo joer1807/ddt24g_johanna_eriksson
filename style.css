@@ -18,8 +18,9 @@
 }
 
 .puff-image img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .puff-content {
@@ -43,38 +44,26 @@
     background-color: #219653;
 }
 
-/* här ska det nu anpassas för dator/surfplatta */
-
-@media (min-width:768px) .puff-section {
-    
-    display: grid;
-    /*på mobilen staplas på dator 3kolumner*/
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
-    /*centrerar innehållet när skärmen ändrar storlek*/
-    padding: 40px 20px;
-}
-
 .cta-section {
     background-color: #dbefd2;
-    padding: 60px 40px;
+    padding: 40px 20px; /*  mindre padding i mobilen för bättre plats */
     margin-top: 40px;
 }
 
 .cta-container {
     display: flex;
+    flex-direction: column; /* Staplar text och knapp i mobilen */
     max-width: 1200px;
     margin: 0 auto;
-    text-align: left;
-    /* texten centreras på mobilskärm*/
-
+    text-align: center;     /* Texten centreras på mobilskärm */
 }
 
 .cta-text {
-    color: aquamarine line-height: 1.6;
+    color: rgb(13, 1, 1);      
+    line-height: 1.6;
     margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .cta-button {
@@ -86,31 +75,46 @@
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 30px;
-    /*rundade hörn på knappen*/
-    bow-shadow: :after;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: all 0.2s ease;
 }
 
-.cta-button: hover {
-    background- color: #219653;
+.cta-button:hover {         
+    background-color: #219653; 
     transform: translateY(-2px);
-
 }
 
-@media (min-width: 768px) {
+
+/* 
+   DATOR/SURFPLATTA  gemensam låda
+    */
+@media (min-width: 768px) {  /* 🟡 HÄR ÖPPNAS HELA DATOR-LÅDAN */
+
+    .puff-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 kolumner på dator */
+        gap: 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
 
     .cta-section {
-        padding: 60px 40px;
+        padding: 60px 40px; /* Mer utrymme på stor skärm */
     }
 
     .cta-container {
         display: flex;
+        flex-direction: row; /* Lägger text till vänster och knapp till höger */
         justify-content: space-between;
         align-items: center;
-        text-align: left;
+        text-align: left;    /* Vänsterställer texten på datorn */
     }
 
     .cta-text {
         flex: 1;
-        margin-right: auto;
+        margin-right: 40px;  /* Skapar avstånd till knappen till höger */
+        margin-bottom: 0;    /* Tar bort mobilens bottenmarginal */
     }
+
+}                            /* 🟡 HÄR STÄNGS HELA DATOR-LÅDAN PERFEKT! */
