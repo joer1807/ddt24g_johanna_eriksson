@@ -45,9 +45,25 @@ margin: 0;
 padding: 0;
 flex-direction: column;
 align-items: flex-end;
-text-align: right;                /*här slutar headern!*/
+text-align: right;     
+} 
 
-}      
+header nav ul li a{
+    color:#000000;
+    font-weight: bold;
+    display: block;
+}
+
+header nav ul li:hover {
+background-color:green;
+}
+header nav ul li:hover a{
+color: #000000;
+}
+ 
+/*här slutar headern!*/
+
+     
 
 /*nu börjar hero section*/ 
 
@@ -63,6 +79,22 @@ text-align: right;                /*här slutar headern!*/
     align-items: center;    
     justify-content: left; 
     box-sizing: border-box;
+    color:#ffffff;
+}
+.hero-button {    /*knappen, form och strl nu*/
+display: inline-block;    /*knappen ska anpassa sig eft pad/bredd*/
+padding: 12px 30px; 
+border border-radius: 5px;
+margin-top: 2px;
+background-color: white;
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.1rem;
+}
+.hero-button:hover {
+    background-color:green;
+    color: #000000;
 }
 
 
