@@ -118,6 +118,33 @@ font-size: 2.2rem;
 margin-bottom: 20px;
 }     /*här slutar nature section under bilden*/
 
+.puff-section {     /*grundinställning: nu börjar puff sectionerna i boxarna*/
+background-color: darkgray;
+padding: 50px 20px;
+box-sizing: border-box;
+}
+.puff-section h3 {   /*inställing för h2*/
+text-align:center;
+font-size: 2.2rem;
+color: black;
+margin-top: 0;
+margin-bottom: 40px;
+}
+.puff-grid {     /*inställing för själva puffarna*/
+display: grid;
+grid-template-colum: 1fr    /*på mobilen blir det 1fr nu,en kolumn*/
+gap: 30px;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.puff-card {     /*nu layouten för korten, färg och form*/
+background-color: light green;
+overflow:hidden;   /*den här reglen gör så bilden följer puffen*/
+}
+
+
+
 
 
 
@@ -138,6 +165,9 @@ header nav ul {
     flex-direction: row;
     gap: 30px;
 }
-
+.puff-grid{
+    grid-template-columns: repeat(3,1fr);  /*3 kolumner för stor skärm*/
+    gap: 30px;
+}
 
 }
