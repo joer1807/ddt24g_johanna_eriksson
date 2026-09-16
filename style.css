@@ -121,7 +121,7 @@ margin-bottom: 20px;
 
 .puff-section {     /*grundinställning: nu börjar puff sectionerna i boxarna*/
 background-color: rgb(231, 230, 230);
-padding: 50px 40px;
+padding: 50px 90px;
 box-sizing: border-box;
 
 }
@@ -133,16 +133,9 @@ margin-top: 0;
 margin-bottom: 20px;
 }
 
-.puff-section h3 {   /*inställing för h3*/
-text-align:center;
-font-size: 1.2rem;
-color: black;
-margin-top: 0;
-margin-bottom: 20px;
-}
 .puff-section h2 {   /*inställing för h3*/
 text-align:center;
-font-size: 1.0rem;
+font-size: 1.2rem;
 color: black;
 margin-top: 0;
 margin-bottom: 20px;
