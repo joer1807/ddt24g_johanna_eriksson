@@ -75,7 +75,6 @@ color: #000000;
     padding: 50px 40px;
     min-height: 350px;
     display: flex;
-    display: flex;
     align-items: center;    
     justify-content: left; 
     box-sizing: border-box;
@@ -84,7 +83,7 @@ color: #000000;
 .hero-button {    /*knappen, form och strl nu*/
 display: inline-block;    /*knappen ska anpassa sig eft pad/bredd*/
 padding: 12px 30px; 
-border border-radius: 5px;
+border-radius: 5px;
 margin-top: 2px;
 background-color: white;
 color: #000000;
@@ -97,9 +96,36 @@ font-size: 1.1rem;
     color: #000000;
 }
 
+.nature-section {   /*den här ställer in själva section nature boxen*/
+  display: block;
+  width: 100%; 
+  padding: 10px 10px;
+  box-sizing: border-box; 
+  background-color: #ffffff;
+  clear: both;             /*den här gör så den hamnar under fotot*/           
+  
+}
+.nature-content {        /*själva innehållet i boxen*/
+display: block;      
+max-width: 950px;
+margin: 0 auto;
+text-align: center;   /*centrerar texten*/ 
+font-family: 1.25rem;  
+line-height: 1.75;           /*radavståndet sprider ut sig*/
+}
+.nature-content h2 {     /*en egen regel för h2*/
+font-size: 2.2rem;
+margin-bottom: 20px;
+}     /*här slutar nature section under bilden*/
 
-/*allt detta gäller stor skärm*/ 
 
+
+
+
+
+
+
+/*allt detta nedan gäller stor skärm*/ 
 
 @media (min-width: 768px) {
 header{
