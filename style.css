@@ -169,6 +169,30 @@ font-size: 1.0rem;
     color: #000000;
 }
 
+.cta-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+background-color: rgb(201, 241, 221);
+padding: 50px 90px;
+box-sizing: border-box;   
+}
+.cta-button {
+ display: inline-block;    /*knappen ska anpassa sig eft pad/bredd*/
+padding: 12px 30px; 
+border-radius: 5px;
+margin-top: 2px;
+background-color: white;
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.0rem;   
+}
+.cta-button:hover {
+    background-color:green;
+    color: #000000;
+}
+
 
 
 
@@ -194,6 +218,19 @@ header nav ul {
 .puff-grid{
     grid-template-columns: repeat(3,1fr);  /*3 kolumner för stor skärm*/
     gap: 30px;
+}
+cta.flexbox {
+    display: flex;
+    flex-direction: row
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.cta-text {
+    text-alignt: left;
+    max-wisth: 700px;
 }
 
 }
