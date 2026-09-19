@@ -232,11 +232,13 @@ margin: 0 auto;
 }
 .footer-brand-layout {   /*kolumn till vänster formas*/
 display: flex;
+flex-direction: column;
 align-items: center;
+text-align: center;
 gap:15px;
 }
 
-.footer-column h4{
+.footer-column h3{
     font-size: 1.1rem;
     margin-top: 0;
     margin-bottom: 15px;
@@ -303,7 +305,7 @@ background-color:grey;
     .hero-section {
 
     padding: 80px 60px;
-    min-height: 450px
+    min-height: 450px;
     justify-content: flex-start;
     text-align: left;
     }
@@ -320,9 +322,6 @@ background-color:grey;
         padding: 60px 40px;
     }
 
-    .puff-grid {
-        grid-template-columns: repeat (3, 1fr);
-    }
     
     .cta-section {
         display: block;
@@ -367,6 +366,12 @@ background-color:grey;
     }
 
     .footer-column {
+        text-align: left;
+    }
+
+    .footer-brand-layout {
+        flex-direction: row;
+        align-items: center;
         text-align: left;
     }
 

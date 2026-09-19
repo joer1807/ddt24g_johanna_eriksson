@@ -6,3 +6,5 @@
 
 -Det är första gången jag arbetat med CSS och det var inte helt enkelt tycker jag! 
 - Vill du ta del av webbsidan jag skapat så finns den här: [Norrgläntan](https://joer1807.github.io/ddt24g_johanna_eriksson/)
+  
+*[![Valid CSS!](https://w3.org)](https://w3.org)
